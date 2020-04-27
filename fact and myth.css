@@ -1,0 +1,81 @@
+{
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {font-family: Arial, Helvetica, sans-serif,Verdana;
+margin: 0}
+
+.navbar {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: red;
+}
+
+.active {
+  background-color: red;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+} 
+input[type=text] {
+	  width: 200px;
+        padding-right: 50px;
+	  box-sizing: border-box;
+	  border: 2px solid;
+	  border-radius: 5px;
+	  font-size: 16px;
+	  background-color: white;
+	  background-position: 10px 10px; 
+	  background-repeat: no-repeat;
+	  padding: 12px 20px 12px 40px;
+	  transition: width 0.4s ease-in-out;
+      float: right;
+	}
+
+	input[type=text]:focus {
+	  width: 50%;
+	}
+
+
+
+.column {
+  float: left;
+  width: 40%;
+  margin-left: 100px;
+  padding: 0 8px;
+  margin: 20px;
+  position: absolute;
+
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+    
+        
+ 

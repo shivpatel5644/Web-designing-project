@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Homepage.css">
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</head>
+<body>
+    
+    <div class="slideshow-container">
+        <div style="height: 100px; width:190px;background-color: black; margin-top: 10px;" > 
+    <img src="blood.png" style="float: left; height:100px;width:100px;">
+    <img src="logo%20text.png" style="float: left; height:80px;width:100px;">
+    </div>
+
+<div class="mySlides">
+  <q>Tears of a mother cannot save her Child. But your Blood can.</q>
+  <p class="author">- Unknown </p>
+</div>
+
+<div class="mySlides">
+  <q>The Blood Donor of today may be recipient of tomorrow</q>
+  <p class="author">- Unknown </p>
+</div>
+
+<div class="mySlides">
+  <q>Your little share of blood can  give many years of life to someone</q>
+  <p class="author">- Unknown</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<div class="navbar">
+    
+    <a class="active" href="#"><i class=""></i> Home</a>
+   <a href="blood%20types.html" height="20px;">Blood Types</a> 
+  <a href="#"><i class=""></i> Contact </a> 
+  <a href="Register.html"><i class=""></i> Register</a>
+    <a href="Donation%20process.html">Donation Process </a> 
+    
+    <div>
+        <form>
+				<input type="text" name="search" placeholder="Search.." float="right"> 
+
+        </form>
+  </div>
+</div>
+
+    <div class="bg">
+        <div class="hero-text">
+            <h1>  BE A HERO <br> DONATE BlOOD </h1>
+            <a href="register.html"><button  type="button" class="hero-textbutton " style="border-radius: 10px ;"> DONATE BLOOD</button> </a>
+        </div>
+    </div>
+    
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="btype%20img.jpg" alt="blood types" style="width:100%">
+      <div class="container">
+        <h2>Your blood Types Explained</h2>
+        <p>Find out about your blood type</p>
+          <p><a href="blood%20types.html"><button class="buttonf">Blood Types</button></a> </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="appntmnt.jpg" alt="" style="width:100%">
+      <div class="container">
+        <h2>Find an appointment</h2>
+    
+        <p>Tired of waiting.fix an appointment and save your time</p>
+        <p><a href="Appointment.html"><button class="buttonf">Appointment</button></a></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="btypeneed.jpg" alt="" style="width:100%">
+      <div class="container">
+        <h2>Blood Type B needed</h2>
+        <p>If you are a B negative donor please book an appointment </p>
+          <p><a href="Register.html"><button class="buttonf">Book now</button></a></p>
+      </div>
+    </div>
+  </div>
+    <div class="column">
+    <div class="card">
+      <img src="fct%20myth.jfif" alt="" style="width:100%">
+      <div class="container">
+        <h2>Lets know the Fact..</h2>
+          <br>
+        <p> Facts and Myths <br></p>
+        
+          <p><a href="Facts%20and%20myths.html"><button class="buttonf">know them</button></a></p>
+      </div>
+    </div>
+  </div>
+<div class="column">
+    <div class="card">
+      <img src="bg%20dp.jpg" alt="" style="width:100%">
+      <div class="container">
+        <h2>Join With us and Save life</h2>
+          <br>
+        <p> Donate blood Donate life.
+          </p>
+           
+        <p><a href="Register.html"><button class="buttonf">Register</button></a></p>
+      </div>
+    </div>
+  </div>
+<div class="column">
+    <div class="card">
+      <img src="donation%20p.jpg" alt="" style="width:100%">
+      <div class="container">
+        <h2>Donation Process</h2>
+        <p>The donation process from the time you arrive center until the time you leave.</p>
+        <p><a href="Donation%20process.html"><button class="buttonf">Know it </button></a></p>
+      </div>
+    </div>
+  </div>
+    
+</div>
+    <div style="height: 250px; width: 100%"></div>
+    
+     <div class="footer">
+        <center><p> You can call us on: 0300 123 23 23</p> </center>
+        <a href="https://www.organdonation.nhs.uk/"><button type="button" class="button button1"> ORGAN DONATION</button> </a>
+         <a href=" https://www.nhsbt.nhs.uk/what-we-do/transplantation-services/tissue-and-eye-services/ "><button type="button" class="button button1"> TISSUE DONATION</button></a>
+        <a href="http://platelets.blood.co.uk/"><button type="button" class="button button1"> PLATELET DONATION</button></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        
+    </div>
+    
+
+      
+    
+    
+    
+
+</body>
+</html> 

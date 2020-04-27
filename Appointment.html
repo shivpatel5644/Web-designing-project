@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Homepage.css">
+	<title></title>
+	<style type="text/css">
+        textarea{
+            height:100px;
+            width:500px;  
+            border-radius:20px 20px;
+            
+        }
+        button{
+            height:40px;
+            width:150px;
+            border-radius: 10px 10px;
+            text-align: center;
+            font-size:15px;
+        }
+        .btn {
+              background-color: white; 
+              color: black; 
+              border: 2px solid #f44336;
+            }
+
+        .btn:hover {
+              background-color: #f44336;
+              color: white;
+            }
+        td{
+            height: 50px;
+            widows: 100px;
+        }
+        input{
+            height: 25px;
+            widows: 100px;
+            border-radius:10px 10px;        
+        }
+        p{
+            height:30px;
+            font-size:20px;
+            padding:10px;
+        }
+        .div1{
+            background-size:cover;
+            border-radius: 10px;
+            background-image: url(bg.jpg);
+            background-position: center;
+            background-repeat:no-repeat;
+        }
+        .div1:hover{
+            box-shadow: 0 0 100px black;
+        }
+	</style>
+</head>
+<body style="">
+	<div style="height: 700px;width:100%">
+        <div style="height: 100px; width:100%;background-color: white; margin-top: 0" > 
+            <img src="bdlogo.jpg" style="float: left; height:100px;width:100px;">
+            <h4 style="color: red;padding-top: 50px;"> Give Blood</h4>
+        </div>
+        <div class="navbar">
+    
+		    <a class="active" href="#"><i class=""></i> Home</a>
+		    <a href="Donation%20process.html"> Donation Process</a> 
+		    <a href="blood%20types.html" height="20px;">Blood Types</a> 
+		    <a href="#"><i ></i> Contact</a> 
+		</div>
+        
+		<div style="height:600px;width:45%;float:left;padding-top: 5px;">
+			<h2>Good To Know</h2>
+			<h1 align="center" style="font-family:sans-serif">Helpful Information</h1>
+			
+            <p>Maintain a healthy iron level by eating iron rich foods.</p>
+            <p>Drink an extra 16 oz. of water prior to your donation.</p>
+            <p>Avoid alcohol consumption before your blood donation.</p>
+            <p>Remember to bring the donor card or national ID/Passport.</p>
+            <p>Finally, Try to get a good night sound sleep after donation.</p>
+			
+		</div>
+		<div style="height: 600px; width:55%;float:right;background-image: url(fbg.jpg)" class="div1">
+			<form>
+				<table style="height:500px;width:30%;" align="center">
+					<tr  >
+						<td colspan="2" style="font-size:25px;text-align:center;color: red;text-shadow:2px 2px black;">REQUEST APPOINTMENT</td>
+					</tr>
+					<tr >
+						<td >
+							<input type="text" placeholder="Name" id="name">
+						</td>
+						<td>
+							<input type="email" placeholder="Email" id="email">
+						</td>
+					</tr>
+					<tr >
+						<td >
+							<input type="number" placeholder="Phone" id="phone">
+						</td>
+						<td>
+							<select style="height:25px;width:150px; border-radius:10px 10px;">
+								<option>Donation Center</option>
+								<option>Katargam</option>
+								<option>Kim</option>
+								<option>Bardoli</option>
+								<option>Kosamba</option>
+							</select>
+						</td>
+					</tr>
+					<tr >
+						<td >
+							<input type="date" placeholder="Date" id="date">
+						</td>
+						<td>
+							<input type="time" placeholder="Time" id="time" style="height:25px;width:100px">
+						</td>
+					</tr>
+					<tr>
+                        <td colspan="2" id="textarea" >
+							<textarea>
+
+								
+							</textarea>
+                        </td>
+						
+					</tr>
+					<tr >
+						<td colspan="2">
+                            <center><button class="btn" onclick="dis()">Get Appoinment</button></center>
+						</td>
+						
+					</tr>
+
+
+				</table>
+			</form>
+
+		</div>
+
+	</div>
+
+</body>
+    <script>
+        function dis(){
+            
+        var a=document.getElementById('name').value;
+        var b=document.getElementById('email').value;
+        var c=document.getElementById('phone').value;
+        var d=document.getElementById('date').value;
+        var e=document.getElementById('time').value;
+        var f=document.getElementById('textarea').value;
+            
+            
+            if(a=="")
+			{
+				alert("enter your name");
+				document.getElementById('name').focus();
+				
+			}
+             else if(b=="")
+			{
+				alert("enter your Email");
+				document.getElementById('email').focus();
+				
+			}
+             else if(c=="")
+			{
+				alert("enter your PhoneNumber");
+				document.getElementById('phone').focus();
+                
+			}
+             else if(d=="")
+			{
+				alert("enter your Appoinment Date");
+				document.getElementById('name').focus();
+				
+			}
+             else if(e=="")
+			{
+				alert("enter your Appoinment time");
+				document.getElementById('time').focus();
+				
+			}
+             else if(f=="")
+			{
+				alert("Enter your Message");
+				document.getElementById('textarea').focus();
+				
+			}
+                        
+
+        }
+    
+    </script>
+</html>
